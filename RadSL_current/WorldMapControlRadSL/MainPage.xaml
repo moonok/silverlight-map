@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="WorldMapControlRadSL.MainPage"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:example="clr-namespace:WorldMapControlRadSL"
+		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+		mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="500">
+    
+    <UserControl.Resources>
+        <example:ShapefileViewModel x:Key="DataContext" Region="world"/>
+    </UserControl.Resources>
+	<Grid x:Name="LayoutRoot" Width="640" Height="500">
+        <Grid.Resources>
+            <telerik:ExtendedDataConverter x:Key="ExtendedDataConverter" />
+            <DataTemplate x:Name="CustomToolTipDataTemplate">
+                <StackPanel Margin="10,5">                    
+                    <!-- <TextBlock FontWeight="Bold" Text="{Binding Converter={StaticResource ExtendedDataConverter}, ConverterParameter='CNTRY_NAME'}" /> -->
+                    <TextBlock Text="{Binding Converter={StaticResource ExtendedDataConverter}, ConverterParameter='Data'}" />
+                    <TextBlock Text="{Binding Converter={StaticResource ExtendedDataConverter}, ConverterParameter='Country'}"/>
+                </StackPanel>
+            </DataTemplate>
+        </Grid.Resources>
+
+        <HyperlinkButton x:Name="Mainpage_HyperlinkButton_LinkToData" Background="#777779" Foreground="#FFFFFF" Content="Link to Map Data" HorizontalContentAlignment="Center" Padding="2,2,2,2" Width="120" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right" NavigateUri="" ></HyperlinkButton>
+        <!-- map width:640, height 480 -->
+        <telerik:RadMap x:Name="RadMap1"
+                        Margin="0,20,0,0"
+                        Background="White" 
+                        BorderThickness="1"
+                        UseDefaultLayout="False"
+                        MouseClickMode="None"
+                        MouseDoubleClickMode="None">
+            <!--                         
+                        GeoBounds="42.3683598045287, -71.0789727419614, 3.9167707221002743, 2.1883037274811104"
+                        MinZoomLevel="3"
+                        MaxZoomLevel="4"            
+                        ZoomLevel="3"
+                        Center="61.9389504266604, 24.697265625"
+            -->
+            <telerik:RadMap.Provider>
+                <telerik:EmptyProvider />
+            </telerik:RadMap.Provider>
+            <telerik:InformationLayer x:Name="InformationLayer">
+                <telerik:InformationLayer.Reader>
+                    <telerik:MapShapeReader Source="{Binding Source={StaticResource DataContext}, Path=ShapefileSourceUri}" 
+                                            DataSource="{Binding Source={StaticResource DataContext}, Path=ShapefileDataSourceUri}"
+                                            />
+                    <!-- ToolTipTemplate="{StaticResource CustomToolTipDataTemplate}" -->
+                    <!-- PreviewReadCompleted="MapShapeReader_PreviewReadCompleted" -->              
+                </telerik:InformationLayer.Reader>
+                <telerik:InformationLayer.ShapeFill>
+                    <telerik:MapShapeFill Fill="#fff7de" Stroke="#5a6368" StrokeThickness="1" />
+                </telerik:InformationLayer.ShapeFill>
+                <!--
+                <telerik:InformationLayer.HighlightFill>
+                    <telerik:MapShapeFill Fill="#f7e7bd"  Stroke="#5a6368" StrokeThickness="1" />
+                </telerik:InformationLayer.HighlightFill>
+                -->
+            </telerik:InformationLayer>
+        </telerik:RadMap>
+    </Grid>
+</UserControl>

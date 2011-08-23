@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldMapControlRadSL", "WorldMapControlRadSL\WorldMapControlRadSL.csproj", "{E5F8FD92-24AD-45E2-861C-F9773E8FBD38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldMapControlRadSL.Web", "WorldMapControlRadSL.Web\WorldMapControlRadSL.Web.csproj", "{8912F34E-C49D-4EAF-95A0-C85FDCCD2D43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5F8FD92-24AD-45E2-861C-F9773E8FBD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F8FD92-24AD-45E2-861C-F9773E8FBD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F8FD92-24AD-45E2-861C-F9773E8FBD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F8FD92-24AD-45E2-861C-F9773E8FBD38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8912F34E-C49D-4EAF-95A0-C85FDCCD2D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8912F34E-C49D-4EAF-95A0-C85FDCCD2D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8912F34E-C49D-4EAF-95A0-C85FDCCD2D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8912F34E-C49D-4EAF-95A0-C85FDCCD2D43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
