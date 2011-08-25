@@ -61,6 +61,7 @@
     <div id="silverlightControlHost">
         <object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="100%" height="100%">
 		  <param name="source" value="ClientBin/WorldMapControlRadSL.xap"/>
+          <param name="initParams" value="LinkToDataUrl=http://brown-moss/MoonSilverlight/Lists/Map%20List/AllItems.aspx, ListGuid=B7BF0524-9756-4958-A110-E60E533EDEC1, SiteUrl=http://brown-moss/MoonSilverlight/" />
 		  <param name="onError" value="onSilverlightError" />
 		  <param name="background" value="white" />
 		  <param name="minRuntimeVersion" value="4.0.50826.0" />

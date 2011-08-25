@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\moonok\Desktop\IEB Syndicated Report Phase 2\Coding\World Map Control\RadSL_current\WorldMapControlRadSL\Bin\Debug\WorldMapControlRadSL.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="8/22/2011 2:56:50 PM">
-  <file source="C:\Users\moonok\Desktop\IEB Syndicated Report Phase 2\Coding\World Map Control\RadSL_current\WorldMapControlRadSL\obj\Debug\WorldMapControlRadSL.dll" archivePath="WorldMapControlRadSL.dll" lastWriteTime="8/22/2011 2:56:49 PM" />
+﻿<xapCache source="C:\Users\moonok\silverlight-map\RadSL_current\WorldMapControlRadSL\Bin\Debug\WorldMapControlRadSL.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="8/25/2011 11:01:34 AM">
+  <file source="C:\Users\moonok\silverlight-map\RadSL_current\WorldMapControlRadSL\obj\Debug\WorldMapControlRadSL.dll" archivePath="WorldMapControlRadSL.dll" lastWriteTime="8/25/2011 11:01:33 AM" />
   <file source="c:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
   <file source="C:\Program Files\Telerik\RadControls for Silverlight Q2 2011\Binaries\Silverlight\Telerik.Windows.Controls.DataVisualization.dll" archivePath="Telerik.Windows.Controls.DataVisualization.dll" lastWriteTime="7/12/2011 7:02:02 PM" />
   <file source="C:\Program Files\Telerik\RadControls for Silverlight Q2 2011\Binaries\Silverlight\Telerik.Windows.Controls.dll" archivePath="Telerik.Windows.Controls.dll" lastWriteTime="7/12/2011 7:00:44 PM" />
@@ -7,6 +7,6 @@
   <file source="C:\Program Files\Telerik\RadControls for Silverlight Q2 2011\Binaries\Silverlight\Telerik.Windows.Data.dll" archivePath="Telerik.Windows.Data.dll" lastWriteTime="7/12/2011 7:00:48 PM" />
   <file source="c:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
   <file source="c:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="8/26/2010 3:17:48 AM" />
-  <file source="C:\Users\moonok\Desktop\IEB Syndicated Report Phase 2\Coding\World Map Control\RadSL_current\WorldMapControlRadSL\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="8/12/2011 11:51:21 AM" />
-  <file source="C:\Users\moonok\Desktop\IEB Syndicated Report Phase 2\Coding\World Map Control\RadSL_current\WorldMapControlRadSL\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="8/12/2011 4:41:12 PM" />
+  <file source="C:\Users\moonok\silverlight-map\RadSL_current\WorldMapControlRadSL\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="8/12/2011 11:51:21 AM" />
+  <file source="C:\Users\moonok\silverlight-map\RadSL_current\WorldMapControlRadSL\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="8/12/2011 4:41:12 PM" />
 </xapCache>

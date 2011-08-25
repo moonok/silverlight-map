@@ -79,6 +79,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CountryCoordinate.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -89,6 +90,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="ShapefileViewModel.cs" />
+    <Compile Include="SharepointListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -101,9 +103,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="country_coordinate.csv" />
     <None Include="Properties\AppManifest.xml" />
-    <None Include="data\world.dbf" />
-    <None Include="data\world.shp" />
     <None Include="Service References\SpProxy\lists.wsdl" />
     <None Include="Service References\SpProxy\WorldMapControlRadSL.SpProxy.AddAttachmentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>

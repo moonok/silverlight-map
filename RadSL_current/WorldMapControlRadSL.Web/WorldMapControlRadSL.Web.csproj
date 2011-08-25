@@ -74,8 +74,8 @@
     <Content Include="ClientBin\Telerik.Windows.Data.zip" />
     <Content Include="ClientBin\System.ComponentModel.DataAnnotations.zip" />
     <Content Include="ClientBin\System.Windows.Data.zip" />
-    <None Include="DataSources\Geospatial\world.dbf" />
-    <None Include="DataSources\Geospatial\world.shp" />
+    <EmbeddedResource Include="DataSources\Geospatial\world.dbf" />
+    <EmbeddedResource Include="DataSources\Geospatial\world.shp" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

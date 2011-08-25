@@ -5,12 +5,12 @@
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:example="clr-namespace:WorldMapControlRadSL"
 		xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-		mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="500">
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="550">
     
     <UserControl.Resources>
         <example:ShapefileViewModel x:Key="DataContext" Region="world"/>
     </UserControl.Resources>
-	<Grid x:Name="LayoutRoot" Width="640" Height="500">
+	<Grid x:Name="LayoutRoot" Width="800" Height="550">
         <Grid.Resources>
             <telerik:ExtendedDataConverter x:Key="ExtendedDataConverter" />
             <DataTemplate x:Name="CustomToolTipDataTemplate">
@@ -30,7 +30,10 @@
                         BorderThickness="1"
                         UseDefaultLayout="False"
                         MouseClickMode="None"
-                        MouseDoubleClickMode="None">
+                        MouseDoubleClickMode="None"
+                        ZoomLevel="2"
+                        MinZoomLevel="2"
+                        MaxZoomLevel="4">
             <!--                         
                         GeoBounds="42.3683598045287, -71.0789727419614, 3.9167707221002743, 2.1883037274811104"
                         MinZoomLevel="3"
@@ -41,7 +44,7 @@
             <telerik:RadMap.Provider>
                 <telerik:EmptyProvider />
             </telerik:RadMap.Provider>
-            <telerik:InformationLayer x:Name="InformationLayer">
+            <telerik:InformationLayer x:Name="InformationLayer" Width="800" Height="550">
                 <telerik:InformationLayer.Reader>
                     <telerik:MapShapeReader Source="{Binding Source={StaticResource DataContext}, Path=ShapefileSourceUri}" 
                                             DataSource="{Binding Source={StaticResource DataContext}, Path=ShapefileDataSourceUri}"
@@ -52,11 +55,9 @@
                 <telerik:InformationLayer.ShapeFill>
                     <telerik:MapShapeFill Fill="#fff7de" Stroke="#5a6368" StrokeThickness="1" />
                 </telerik:InformationLayer.ShapeFill>
-                <!--
                 <telerik:InformationLayer.HighlightFill>
-                    <telerik:MapShapeFill Fill="#f7e7bd"  Stroke="#5a6368" StrokeThickness="1" />
+                    <telerik:MapShapeFill Fill="#fff7de" Stroke="#5a6368" StrokeThickness="1" />
                 </telerik:InformationLayer.HighlightFill>
-                -->
             </telerik:InformationLayer>
         </telerik:RadMap>
     </Grid>
